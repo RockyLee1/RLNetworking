@@ -13,6 +13,11 @@
 		958F213E22991C380057185F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958F213D22991C380057185F /* Assets.xcassets */; };
 		958F214122991C380057185F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958F213F22991C380057185F /* LaunchScreen.storyboard */; };
 		958F214422991C380057185F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F214322991C380057185F /* main.m */; };
+		958F215822991C4C0057185F /* RLNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F214D22991C4C0057185F /* RLNetworkAgent.m */; };
+		958F215922991C4C0057185F /* RLBaseRequest+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F215322991C4C0057185F /* RLBaseRequest+Common.m */; };
+		958F215A22991C4C0057185F /* RLBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F215522991C4C0057185F /* RLBaseRequest.m */; };
+		958F215B22991C4C0057185F /* RLRequestUserInfoHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F215622991C4C0057185F /* RLRequestUserInfoHandle.m */; };
+		958F215C22991C4C0057185F /* RLResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F215722991C4C0057185F /* RLResponseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,19 @@
 		958F214022991C380057185F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		958F214222991C380057185F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		958F214322991C380057185F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		958F214B22991C4C0057185F /* RLBaseRequestCommonResponseCodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLBaseRequestCommonResponseCodeProtocol.h; sourceTree = "<group>"; };
+		958F214C22991C4C0057185F /* RLBaseRequest+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLBaseRequest+Private.h"; sourceTree = "<group>"; };
+		958F214D22991C4C0057185F /* RLNetworkAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLNetworkAgent.m; sourceTree = "<group>"; };
+		958F214E22991C4C0057185F /* RLBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLBaseRequest.h; sourceTree = "<group>"; };
+		958F214F22991C4C0057185F /* RLBaseRequest+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLBaseRequest+Common.h"; sourceTree = "<group>"; };
+		958F215022991C4C0057185F /* RLBaseRequestUserInfoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLBaseRequestUserInfoProtocol.h; sourceTree = "<group>"; };
+		958F215122991C4C0057185F /* RLResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLResponseModel.h; sourceTree = "<group>"; };
+		958F215222991C4C0057185F /* RLRequestUserInfoHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLRequestUserInfoHandle.h; sourceTree = "<group>"; };
+		958F215322991C4C0057185F /* RLBaseRequest+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLBaseRequest+Common.m"; sourceTree = "<group>"; };
+		958F215422991C4C0057185F /* RLNetworkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLNetworkAgent.h; sourceTree = "<group>"; };
+		958F215522991C4C0057185F /* RLBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLBaseRequest.m; sourceTree = "<group>"; };
+		958F215622991C4C0057185F /* RLRequestUserInfoHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLRequestUserInfoHandle.m; sourceTree = "<group>"; };
+		958F215722991C4C0057185F /* RLResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLResponseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +60,7 @@
 		958F212822991C360057185F = {
 			isa = PBXGroup;
 			children = (
+				958F214A22991C4C0057185F /* RLNetworking */,
 				958F213322991C360057185F /* RLNetworkingDemo */,
 				958F213222991C360057185F /* Products */,
 			);
@@ -69,6 +88,26 @@
 				958F214322991C380057185F /* main.m */,
 			);
 			path = RLNetworkingDemo;
+			sourceTree = "<group>";
+		};
+		958F214A22991C4C0057185F /* RLNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				958F214E22991C4C0057185F /* RLBaseRequest.h */,
+				958F215522991C4C0057185F /* RLBaseRequest.m */,
+				958F214F22991C4C0057185F /* RLBaseRequest+Common.h */,
+				958F215322991C4C0057185F /* RLBaseRequest+Common.m */,
+				958F214C22991C4C0057185F /* RLBaseRequest+Private.h */,
+				958F214B22991C4C0057185F /* RLBaseRequestCommonResponseCodeProtocol.h */,
+				958F215022991C4C0057185F /* RLBaseRequestUserInfoProtocol.h */,
+				958F215422991C4C0057185F /* RLNetworkAgent.h */,
+				958F214D22991C4C0057185F /* RLNetworkAgent.m */,
+				958F215222991C4C0057185F /* RLRequestUserInfoHandle.h */,
+				958F215622991C4C0057185F /* RLRequestUserInfoHandle.m */,
+				958F215122991C4C0057185F /* RLResponseModel.h */,
+				958F215722991C4C0057185F /* RLResponseModel.m */,
+			);
+			path = RLNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958F215A22991C4C0057185F /* RLBaseRequest.m in Sources */,
 				958F213922991C360057185F /* ViewController.m in Sources */,
+				958F215C22991C4C0057185F /* RLResponseModel.m in Sources */,
 				958F214422991C380057185F /* main.m in Sources */,
+				958F215822991C4C0057185F /* RLNetworkAgent.m in Sources */,
+				958F215922991C4C0057185F /* RLBaseRequest+Common.m in Sources */,
 				958F213622991C360057185F /* AppDelegate.m in Sources */,
+				958F215B22991C4C0057185F /* RLRequestUserInfoHandle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
